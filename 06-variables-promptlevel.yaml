@@ -1,0 +1,14 @@
+- name: variables from prompt level
+  hosts: localhost
+  vars_prompt:
+  - name: cource
+    prompt: please enter your cource name
+    private: false # user can see the what they are entering
+  - name: triner
+    prompt: Please ener triner name
+    private: true # user can't see what they are entering
+  - name: duration
+    prompt: please enter duration of the cource
+  tasks:
+    ansible.builtin.debug:
+      msg: "hi i am lerning {{cource}}", triner is {{triner}}, duration is {{duration}}"
