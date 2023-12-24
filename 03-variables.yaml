@@ -6,5 +6,5 @@
     duration: "120days"
   tasks:
   - name: check variables
-  ansible.builtin.debug:
+    ansible.builtin.debug:
     msg: "hai i am lerning {{cource}}, triner is {{triner}}, duration is {{duration}}" 
