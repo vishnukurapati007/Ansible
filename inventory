@@ -2,7 +2,7 @@
 192.187.56.10
 
 [localhost]
-local host
+localhost
 
 [localhost:vars]
 cource="devops from inventory"
