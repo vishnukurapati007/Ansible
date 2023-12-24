@@ -4,8 +4,8 @@
   - name: installing nginx package
     ansible.builtin.package:
       name: nginx
-      state: present
+      state: absent
   - name: run nginx
     ansible.builtin.package:
       name: nginx
-      state: started
+      state: stop
