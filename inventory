@@ -4,7 +4,7 @@
 [localhost]
 local host
 
-[localhost.vars]
+[localhost:vars]
 cource="devops from inventory"
 triner="shivakumar"
 duration="120days"
