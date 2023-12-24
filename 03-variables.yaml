@@ -1,5 +1,5 @@
 - name: variables from palybook level
-  hosts: localhosts
+  hosts: localhost
   vars:
     cource: "Devops"
     triner: "shivakumar"
