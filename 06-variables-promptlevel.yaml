@@ -10,5 +10,6 @@
   - name: duration
     prompt: please enter duration of the cource
   tasks:
-    ansible.builtin.debug:
-      msg: "hi i am lerning {{cource}}", triner is {{triner}}, duration is {{duration}}"
+  - name: print and check the values
+      ansible.builtin.debug:
+        msg: "hi i am lerning {{cource}}", triner is {{triner}}, duration is {{duration}}"
