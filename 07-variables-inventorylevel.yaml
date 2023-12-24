@@ -1,0 +1,6 @@
+- name: variables from palybook level
+  hosts: localhost  
+  tasks:
+  - name: check variables
+    ansible.builtin.debug:
+      msg: "hai i am lerning {{cource}}, triner is {{triner}}, duration is {{duration}}"

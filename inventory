@@ -1,6 +1,14 @@
 192.187.56.9
 192.187.56.10
 
+[localhost]
+local host
+
+[localhost.vars]
+cource="devops from inventory"
+triner="shivakumar"
+duration="120days"
+
 
 
 [web]
