@@ -1,0 +1,14 @@
+- name: variables from palybook level
+  hosts: localhost
+  vars:
+    cource: "Devops"
+    triner: "shivakumar"
+    duration: "120days"
+  tasks:
+  - name: check variables
+    vars:
+      Cource: "devops"
+      triner: "shiva"
+      durattion: "100days"
+    ansible.builtin.debug:
+      msg: "hai i am lerning {{cource}}, triner is {{triner}}, duration is {{duration}}" 
