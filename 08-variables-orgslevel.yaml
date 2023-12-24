@@ -1,0 +1,6 @@
+- name: variables from orgs evel
+  hosts: localhost  
+  tasks:
+  - name: check variables
+    ansible.builtin.debug:
+      msg: "hai i am lerning {{person}}, triner is {{wishes}}"
