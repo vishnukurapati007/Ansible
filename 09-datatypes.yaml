@@ -18,10 +18,10 @@
   tasks:
   - name: Print key value pair
     ansible.builtin.debug:
-      msg: "name: "{{name}}"
+      msg: "name: {{name}}"
   - name: print list
     ansible.builtin.debug:
-      msg: "skills: "{{skills}}"
+      msg: "skills: {{skills}}"
   -name: print map
     ansible.builtin.debug:
       msg: "experiance: {{experiance}}"
