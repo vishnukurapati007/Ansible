@@ -1,0 +1,30 @@
+- name: checking data types
+  hosts: localhost
+  vars:
+    name: sivakumar # key value pair
+    skills: # list
+    - devops
+    - shell
+    - aws
+    - ansible
+    - linux
+    experiance: # map
+      devops: 7
+      shell: 6
+      aws: 5
+      ansible: 4
+      linux: 9
+    triner: true # boolen
+  tasks:
+  - name: Print key value pair
+    ansible.builtin.debug:
+      msg: "name: {{name}}"
+  - name: print list
+    ansible.builtin.debug:
+      msg: "skills: {{skills}}"
+  -name: print map
+    ansible.builtin.debug:
+      msg: "experiance: {{experiance}}"
+  - name: Print boolen
+    ansible.builtin.debug:
+      msg: "is triner: {{triner}}"
